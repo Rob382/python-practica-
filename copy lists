@@ -1,0 +1,10 @@
+
+x = [4, True, 'hello']
+
+y = x                               #esto modifica los dos porque en realidad x y y son una referencia a la lista
+x[0] = 'holi'                       #los elementos se guardan en otro lado nadamas
+print(x, '|', y)
+
+y = x[:]
+x[0] = 'crayoli'                   #este si cambia uno porque copiamos y modificamos la lista no solo hacemos referencia
+print(x, '|', y)
